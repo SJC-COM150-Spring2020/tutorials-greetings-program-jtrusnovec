@@ -22,11 +22,16 @@ Partial Class greetings
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(greetings))
         Me.btnClick = New System.Windows.Forms.Button()
         Me.txtName = New System.Windows.Forms.TextBox()
         Me.lblHeading = New System.Windows.Forms.Label()
         Me.lblName = New System.Windows.Forms.Label()
-        Me.txtOut = New System.Windows.Forms.TextBox()
+        Me.lstOut = New System.Windows.Forms.ListBox()
+        Me.btnClear = New System.Windows.Forms.Button()
+        Me.btnExit = New System.Windows.Forms.Button()
+        Me.picGreeting = New System.Windows.Forms.PictureBox()
+        CType(Me.picGreeting, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnClick
@@ -70,28 +75,63 @@ Partial Class greetings
         Me.lblName.TabIndex = 3
         Me.lblName.Text = "Enter Your Name"
         '
-        'txtOut
+        'lstOut
         '
-        Me.txtOut.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtOut.Location = New System.Drawing.Point(26, 350)
-        Me.txtOut.Multiline = True
-        Me.txtOut.Name = "txtOut"
-        Me.txtOut.Size = New System.Drawing.Size(250, 80)
-        Me.txtOut.TabIndex = 4
+        Me.lstOut.Font = New System.Drawing.Font("Arial Narrow", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lstOut.FormattingEnabled = True
+        Me.lstOut.ItemHeight = 25
+        Me.lstOut.Location = New System.Drawing.Point(26, 342)
+        Me.lstOut.Name = "lstOut"
+        Me.lstOut.Size = New System.Drawing.Size(235, 129)
+        Me.lstOut.TabIndex = 4
+        '
+        'btnClear
+        '
+        Me.btnClear.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClear.Location = New System.Drawing.Point(26, 517)
+        Me.btnClear.Name = "btnClear"
+        Me.btnClear.Size = New System.Drawing.Size(98, 32)
+        Me.btnClear.TabIndex = 5
+        Me.btnClear.Text = "Clear"
+        Me.btnClear.UseVisualStyleBackColor = True
+        '
+        'btnExit
+        '
+        Me.btnExit.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnExit.Location = New System.Drawing.Point(163, 517)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(98, 32)
+        Me.btnExit.TabIndex = 6
+        Me.btnExit.Text = "Exit"
+        Me.btnExit.UseVisualStyleBackColor = True
+        '
+        'picGreeting
+        '
+        Me.picGreeting.Image = CType(resources.GetObject("picGreeting.Image"), System.Drawing.Image)
+        Me.picGreeting.Location = New System.Drawing.Point(276, 55)
+        Me.picGreeting.Name = "picGreeting"
+        Me.picGreeting.Size = New System.Drawing.Size(438, 494)
+        Me.picGreeting.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.picGreeting.TabIndex = 7
+        Me.picGreeting.TabStop = False
         '
         'greetings
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(623, 530)
-        Me.Controls.Add(Me.txtOut)
+        Me.ClientSize = New System.Drawing.Size(729, 569)
+        Me.Controls.Add(Me.picGreeting)
+        Me.Controls.Add(Me.btnExit)
+        Me.Controls.Add(Me.btnClear)
+        Me.Controls.Add(Me.lstOut)
         Me.Controls.Add(Me.lblName)
         Me.Controls.Add(Me.lblHeading)
         Me.Controls.Add(Me.txtName)
         Me.Controls.Add(Me.btnClick)
         Me.Name = "greetings"
         Me.Text = "greetings"
+        CType(Me.picGreeting, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -101,5 +141,8 @@ Partial Class greetings
     Friend WithEvents txtName As TextBox
     Friend WithEvents lblHeading As Label
     Friend WithEvents lblName As Label
-    Friend WithEvents txtOut As TextBox
+    Friend WithEvents lstOut As ListBox
+    Friend WithEvents btnClear As Button
+    Friend WithEvents btnExit As Button
+    Friend WithEvents picGreeting As PictureBox
 End Class
