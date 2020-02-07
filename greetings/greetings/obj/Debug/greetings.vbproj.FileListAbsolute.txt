@@ -1,0 +1,11 @@
+I:\ComClasses\2020SP\mbliss\2020SP-LEC-COM-150-S03\jtrusnovec\in class tutorial\greetings\greetings\bin\Debug\greetings.exe.config
+I:\ComClasses\2020SP\mbliss\2020SP-LEC-COM-150-S03\jtrusnovec\in class tutorial\greetings\greetings\bin\Debug\greetings.exe
+I:\ComClasses\2020SP\mbliss\2020SP-LEC-COM-150-S03\jtrusnovec\in class tutorial\greetings\greetings\bin\Debug\greetings.pdb
+I:\ComClasses\2020SP\mbliss\2020SP-LEC-COM-150-S03\jtrusnovec\in class tutorial\greetings\greetings\bin\Debug\greetings.xml
+I:\ComClasses\2020SP\mbliss\2020SP-LEC-COM-150-S03\jtrusnovec\in class tutorial\greetings\greetings\obj\Debug\greetings.vbprojResolveAssemblyReference.cache
+I:\ComClasses\2020SP\mbliss\2020SP-LEC-COM-150-S03\jtrusnovec\in class tutorial\greetings\greetings\obj\Debug\greetings.greetings.resources
+I:\ComClasses\2020SP\mbliss\2020SP-LEC-COM-150-S03\jtrusnovec\in class tutorial\greetings\greetings\obj\Debug\greetings.Resources.resources
+I:\ComClasses\2020SP\mbliss\2020SP-LEC-COM-150-S03\jtrusnovec\in class tutorial\greetings\greetings\obj\Debug\greetings.vbproj.GenerateResource.Cache
+I:\ComClasses\2020SP\mbliss\2020SP-LEC-COM-150-S03\jtrusnovec\in class tutorial\greetings\greetings\obj\Debug\greetings.exe
+I:\ComClasses\2020SP\mbliss\2020SP-LEC-COM-150-S03\jtrusnovec\in class tutorial\greetings\greetings\obj\Debug\greetings.xml
+I:\ComClasses\2020SP\mbliss\2020SP-LEC-COM-150-S03\jtrusnovec\in class tutorial\greetings\greetings\obj\Debug\greetings.pdb
