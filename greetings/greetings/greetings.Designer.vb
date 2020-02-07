@@ -25,6 +25,8 @@ Partial Class greetings
         Me.btnClick = New System.Windows.Forms.Button()
         Me.txtName = New System.Windows.Forms.TextBox()
         Me.lblHeading = New System.Windows.Forms.Label()
+        Me.lblName = New System.Windows.Forms.Label()
+        Me.txtOut = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'btnClick
@@ -32,9 +34,9 @@ Partial Class greetings
         Me.btnClick.BackColor = System.Drawing.Color.Navy
         Me.btnClick.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnClick.ForeColor = System.Drawing.Color.White
-        Me.btnClick.Location = New System.Drawing.Point(26, 288)
+        Me.btnClick.Location = New System.Drawing.Point(26, 255)
         Me.btnClick.Name = "btnClick"
-        Me.btnClick.Size = New System.Drawing.Size(126, 44)
+        Me.btnClick.Size = New System.Drawing.Size(147, 43)
         Me.btnClick.TabIndex = 0
         Me.btnClick.Text = "Click Me"
         Me.btnClick.UseVisualStyleBackColor = False
@@ -43,7 +45,7 @@ Partial Class greetings
         '
         Me.txtName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtName.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtName.Location = New System.Drawing.Point(26, 213)
+        Me.txtName.Location = New System.Drawing.Point(26, 191)
         Me.txtName.Name = "txtName"
         Me.txtName.Size = New System.Drawing.Size(197, 29)
         Me.txtName.TabIndex = 1
@@ -52,11 +54,30 @@ Partial Class greetings
         '
         Me.lblHeading.AutoSize = True
         Me.lblHeading.Font = New System.Drawing.Font("Arial Narrow", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHeading.Location = New System.Drawing.Point(23, 59)
+        Me.lblHeading.Location = New System.Drawing.Point(19, 55)
         Me.lblHeading.Name = "lblHeading"
         Me.lblHeading.Size = New System.Drawing.Size(242, 37)
         Me.lblHeading.TabIndex = 2
         Me.lblHeading.Text = "Greetings Program"
+        '
+        'lblName
+        '
+        Me.lblName.AutoSize = True
+        Me.lblName.Font = New System.Drawing.Font("Arial Narrow", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblName.Location = New System.Drawing.Point(21, 150)
+        Me.lblName.Name = "lblName"
+        Me.lblName.Size = New System.Drawing.Size(164, 29)
+        Me.lblName.TabIndex = 3
+        Me.lblName.Text = "Enter Your Name"
+        '
+        'txtOut
+        '
+        Me.txtOut.Font = New System.Drawing.Font("Arial Narrow", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtOut.Location = New System.Drawing.Point(26, 350)
+        Me.txtOut.Multiline = True
+        Me.txtOut.Name = "txtOut"
+        Me.txtOut.Size = New System.Drawing.Size(250, 80)
+        Me.txtOut.TabIndex = 4
         '
         'greetings
         '
@@ -64,6 +85,8 @@ Partial Class greetings
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(623, 530)
+        Me.Controls.Add(Me.txtOut)
+        Me.Controls.Add(Me.lblName)
         Me.Controls.Add(Me.lblHeading)
         Me.Controls.Add(Me.txtName)
         Me.Controls.Add(Me.btnClick)
@@ -77,4 +100,6 @@ Partial Class greetings
     Friend WithEvents btnClick As Button
     Friend WithEvents txtName As TextBox
     Friend WithEvents lblHeading As Label
+    Friend WithEvents lblName As Label
+    Friend WithEvents txtOut As TextBox
 End Class
